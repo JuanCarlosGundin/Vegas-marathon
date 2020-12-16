@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*estilos de navegación*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+div.scrollmenu {
+    background-color: #ff6c6c;
+    overflow: auto;
+    white-space: nowrap;
+    padding-left: 5%;
+    position: fixed;
+    width: 100%;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 1% 5% 1% 5%;
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10% 0 10%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.8s;
+}
+
+li {
+    float: left;
+    width: 20%;
+}
+
+li a {
+    display: block;
+    font-size: 2vw;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: gray;
+}
+
+.header {
+    background-image: url("../img/portada999.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 10% 20px;
+    text-align: center;
+    font-size: 4vw;
+    backdrop-filter: 0.9px;
+    color: rgb(255, 255, 255);
+}
+
+.header h1 {
+    backdrop-filter: 0.9px;
+}
+
+
+/*clases de columnas*/
+
+.center {
+    text-align: center;
+}
+
+.one-column {
+    float: center;
+    width: 100%;
+}
+
+.one-column h1 {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.one-column img {
+    width: 100%;
+}
+
+.one-column p {
+    font-size: 1.5vw;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 2%;
+}
+
+.two-column h1 {
+    font-size: 4vw;
+}
+
+.two-column p {
+    font-size: 1.5vw;
+}
+
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 2%;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+.boton img {
+    width: 100%;
+    padding: 20%;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #fa6956;
+    color: black;
+}
+
+#footer-a {
+    background-color: #f5e37d;
+    color: black;
+}
+
+
+/*quitar la barra de scroll*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*auxiliares*/
+
+#countdown {
+    text-align: center;
+    font-size: 6vw;
+}
+
+#color-seccion1 {
+    background-color: #ffc3bb;
+}
+
+#color-seccion2 {
+    background-color: #ffe7bb;
+}
+
+#color-merch1 {
+    background-color: rgb(207, 233, 169);
+}
+
+#footer {
+    background-color: #ffc3bb;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:700px) {
+    .one-column {
+        width: 100%;
+    }
+    .one-column img {
+        width: 80%;
+    }
+    .one-column h1 {
+        font-size: 6vw;
+    }
+    .one-column p {
+        font-size: 5vw;
+    }
+    .header h1 {
+        font-size: 300%;
+    }
+    .two-column p {
+        font-size: 4.2vw;
+    }
+    .two-column {
+        width: 100%;
+    }
+    .two-column h1 {
+        text-align: center;
+        font-size: 7vw;
+    }
+    .four-column {
+        width: 50%;
+    }
+    .four-column img {
+        width: 100%;
+    }
+    li a {
+        font-size: 2vw;
+        color: rgb(0, 0, 0);
+    }
+    ul {
+        padding: 0px;
+    }
+    .header {
+        height: 235px;
+    }
+    #countdown {
+        padding-top: 10px;
+    }
+    .boton img {
+        width: 100%;
+    }
+    div.scrollmenu a {
+        font-size: 6vw;
+    }
+}
