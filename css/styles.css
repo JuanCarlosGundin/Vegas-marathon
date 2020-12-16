@@ -97,6 +97,10 @@ li a:hover:not(.active) {
     text-align: center;
 }
 
+.out {
+    padding: 2px;
+}
+
 .one-column {
     float: center;
     width: 100%;
